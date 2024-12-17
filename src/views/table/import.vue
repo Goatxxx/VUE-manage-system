@@ -2,6 +2,7 @@
     <div>
         <div class="container">
             <div class="handle-box">
+                <h2>你可以在这里导入数据，导入的数据将会追加到表格中（但是格式要一样）<br></h2>
                 <el-upload action="#" :limit="1" accept=".xlsx, .xls" :show-file-list="false"
                     :before-upload="beforeUpload" :http-request="handleMany">
                     <el-button class="mr10" type="success">批量导入</el-button>

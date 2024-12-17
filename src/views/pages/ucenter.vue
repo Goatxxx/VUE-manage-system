@@ -8,30 +8,13 @@
                 </div>
                 <div class="user-info">
                     <div class="info-name">{{ name }}</div>
-                    <div class="info-desc">
-                        <span>@lin-xin</span>
+                    <div class="info-desc">                                                      
+                        <span>@ymnnb</span>
                         <el-divider direction="vertical" />
-                        <el-link href="https://lin-xin.gitee.io" target="_blank">lin-xin.gitee.io</el-link>
-                    </div>
-                    <div class="info-desc">FE Developer</div>
-                    <div class="info-icon">
-                        <a href="https://github.com/lin-xin" target="_blank"> <i class="el-icon-lx-github-fill"></i></a>
-                        <i class="el-icon-lx-qq-fill"></i>
-                        <i class="el-icon-lx-facebook-fill"></i>
-                        <i class="el-icon-lx-twitter-fill"></i>
+                        <el-link href="https://github.com/Goatxxx" target="_blank">ymnnb</el-link>
                     </div>
                 </div>
-                <div class="user-footer">
-                    <div class="user-footer-item">
-                        <el-statistic title="Follower" :value="1800" />
-                    </div>
-                    <div class="user-footer-item">
-                        <el-statistic title="Following" :value="666" />
-                    </div>
-                    <div class="user-footer-item">
-                        <el-statistic title="Total Post" :value="888" />
-                    </div>
-                </div>
+                
             </el-card>
             <el-card
                 class="user-content"
@@ -76,19 +59,12 @@
                             </el-form-item>
                         </el-form>
                     </el-tab-pane>
-                    <el-tab-pane name="label4" label="赞赏作者" class="user-tabpane">
+                    <el-tab-pane name="label4" label="作者" class="user-tabpane">
                         <div class="plugins-tips">
-                            如果该框架
-                            <el-link href="https://github.com/lin-xin/vue-manage-system" target="_blank"
-                                >vue-manage-system</el-link
-                            >
-                            对你有帮助，那就请作者喝杯饮料吧！<el-icon>
-                                <ColdDrink />
-                            </el-icon>
-                            加微信号 linxin_20 探讨问题。
+                            Ymnnb
                         </div>
                         <div>
-                            <img src="https://lin-xin.gitee.io/images/weixin.jpg" />
+                            <img src="@/assets/img/ymnnb.jpg" />
                         </div>
                     </el-tab-pane>
                 </el-tabs>
@@ -102,6 +78,8 @@ import { reactive, ref } from 'vue';
 import { VueCropper } from 'vue-cropper';
 import 'vue-cropper/dist/index.css';
 import avatar from '@/assets/img/img.jpg';
+//import avatar from '@/assets/img/img.jpg';
+import ymmnb from '@/assets/img/ymmnb1.jpg';
 import TabsComp from '../element/tabs.vue';
 
 const name = localStorage.getItem('vuems_name');

@@ -1,8 +1,7 @@
 <template>
     <div class="container">
         <div class="plugins-tips">
-            vue-echarts：Apache ECharts™ 的 Vue.js 组件。 访问地址：
-            <a href="https://github.com/ecomfe/vue-echarts" target="_blank">vue-echarts</a>
+            <h2>vue-echarts组件</h2>            
         </div>
         <el-card class="mgb20" shadow="hover">
             <template #header>

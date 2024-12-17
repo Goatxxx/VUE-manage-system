@@ -1,13 +1,14 @@
 <template>
     <div>
         <el-card class="mgb20">
-            <template #header>基础用法</template>
+            <template #header>展示图片</template>
             <el-carousel height="400px">
                 <el-carousel-item v-for="item in 4" :key="item">
                     <h3>{{ item }}</h3>
                 </el-carousel-item>
             </el-carousel>
         </el-card>
+
 
         <el-row :gutter="20">
             <el-col :span="12">
@@ -42,6 +43,8 @@ const imgs = [
     'https://cdn.pixabay.com/photo/2023/07/29/10/21/grasshopper-8156626_640.jpg',
 ];
 </script>
+
+
 
 <style scoped>
 .el-carousel__item h3 {

@@ -29,10 +29,10 @@
 
         <el-card class="mgb20" shadow="hover">
             <template #header>CountUp.js</template>
-            <div class="plugins-tips">
+            <!-- <div class="plugins-tips">
                 countup.js：用于快速创建以更有趣的方式显示数字数据的动画。 访问地址：
                 <a href="https://github.com/inorganik/countUp.js" target="_blank">countUp.js</a>
-            </div>
+            </div> -->
             <el-row>
                 <el-col :span="8" style="text-align: center">
                     <p>基础用法</p>

@@ -1,10 +1,13 @@
 <template>
     <div class="container">
-        <div class="content-title">支持拖拽</div>
+        <div class="content-title">文件上传</div>
         <div class="plugins-tips">
-            Element Plus自带上传组件。 访问地址：
-            <a href="https://element-plus.org/zh-CN/component/upload.html" target="_blank">Element Plus Upload</a>
+            Element Plus自带上传组件 支持拖拽
         </div>
+        <!-- 上传组件 -->
+        <!-- 这里的action是上传的接口地址,jsonplaceholder.typicode.com 是一个假数据 API，用来模拟网络请求。multiple表示可以上传多个文件 -->
+        <!-- 这里的on-change是上传成功后的回调函数，可以获取到上传的文件列表 -->
+        <!-- 这里的drag表示可以拖拽上传 -->
         <el-upload class="upload-demo" drag action="http://jsonplaceholder.typicode.com/api/posts/" multiple
             :on-change="handle">
             <el-icon class="el-icon--upload"><upload-filled /></el-icon>
@@ -14,12 +17,6 @@
             </div>
         </el-upload>
 
-        <div class="content-title">支持裁剪</div>
-        <div class="plugins-tips">
-            vue-cropper：一个简单的vue图片裁剪插件。 访问地址：
-            <a href="https://github.com/xyxiao001/vue-cropper" target="_blank">vue-cropper</a>。 示例请查看
-            <router-link to="/ucenter">个人中心-我的头像</router-link>
-        </div>
     </div>
 </template>
 

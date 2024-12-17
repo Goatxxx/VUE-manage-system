@@ -9,7 +9,7 @@
 					<el-button type="warning" :icon="CirclePlusFilled" @click="visible = true">新增</el-button>
 				</template>
 				<template #money="{ rows }">
-					￥{{ rows.money }}
+					{{ rows.money }}
 				</template>
 				<template #thumb="{ rows }">
 					<el-image class="table-td-thumb" :src="rows.thumb" :z-index="10" :preview-src-list="[rows.thumb]"
@@ -69,7 +69,7 @@ let columns = ref([
 	{ type: 'selection' },
 	{ type: 'index', label: '序号', width: 55, align: 'center' },
 	{ prop: 'name', label: '用户名' },
-	{ prop: 'money', label: '账户余额' },
+	{ prop: 'money', label: '年龄' },
 	{ prop: 'thumb', label: '头像' },
 	{ prop: 'state', label: '账户状态' },
 	{ prop: 'operator', label: '操作', width: 250 },
@@ -97,7 +97,7 @@ let options = ref<FormOption>({
 	span: 24,
 	list: [
 		{ type: 'input', label: '用户名', prop: 'name', required: true },
-		{ type: 'number', label: '账户余额', prop: 'money', required: true },
+		{ type: 'number', label: '年龄', prop: 'money', required: true },
 		{ type: 'switch', activeText: '正常', inactiveText: '异常', label: '账户状态', prop: 'state', required: true },
 		{ type: 'upload', label: '头像', prop: 'thumb', required: true },
 	]
@@ -139,7 +139,7 @@ const handleView = (row: TableItem) => {
 		},
 		{
 			prop: 'money',
-			label: '账户余额',
+			label: '年龄',
 		},
 		{
 			prop: 'state',

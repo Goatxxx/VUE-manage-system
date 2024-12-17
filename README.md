@@ -1,36 +1,12 @@
-# vue-manage-system
+## 作者
 
-  <a href="https://github.com/lin-xin/vue-manage-system/releases">
-    <img src="https://img.shields.io/github/release/lin-xin/vue-manage-system.svg" alt="GitHub release">
-  </a>
-   <a href="https://github.com/lin-xin/vue-manage-system/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
-  </a>
-
-基于 Vue3 + pinia + Element Plus 的后台管理系统解决方案。[线上演示](https://lin-xin.github.io/example/vue-manage-system/)
-
-> Vue2 版本请看 [tag-V4.2.0](https://github.com/lin-xin/vue-manage-system/tree/V4.2.0)，带后台功能请看 [tsrpc-manage-system](https://github.com/lin-xin/tsrpc-manage-system)
-
-[文档地址](https://lin-xin.github.io/example/vuems-doc/)
-[English document](https://github.com/lin-xin/manage-system/blob/master/README_EN.md)
-
-## 赞助商
-
-### 好问
-
-[<img src="https://static.bestqa.net/logo/bestqa_haowen.png" width="220" height="100">](https://www.bestqa.net/home/index.html)
-
-专业问卷服务，一对一客服，按需定制
-
-## 支持作者
-
-请作者喝杯咖啡吧！(微信号：linxin_20)
-
-![微信扫一扫](https://lin-xin.github.io/images/weixin.jpg)
+ymnnb，一个愤怒的战斗鸡，欢迎来撩！
 
 ## 前言
 
-该方案作为一套多功能的后台框架模板，适用于绝大部分的后台管理系统开发。基于 Vue3 + pinia + typescript，引用 Element Plus 组件库，方便开发。实现逻辑简单，适合外包项目，快速交付。
+该方案作为一套多功能的后台框架模板，适用于绝大部分的管理系统开发。
+基于 Vue3 + pinia + typescript，引用 Element Plus 组件库，方便开发。
+实现了一个简单的健康管理系统
 
 ## 功能
 
@@ -38,7 +14,7 @@
 -   [x] vite 3
 -   [x] pinia
 -   [x] typescript
--   [x] 登录/注册
+-   [x] 登录/注册/验证码
 -   [x] Dashboard
 -   [x] 表格/表单
 -   [x] 图表 :bar_chart:
@@ -51,30 +27,47 @@
 
 ## 安装步骤
 
-> 因为使用 vite3，node 版本需要 14.18+
-
-```
-git clone https://github.com/lin-xin/vue-manage-system.git      // 把模板下载到本地
+拉取项目代码
 cd vue-manage-system    // 进入模板目录
 npm install         // 安装项目依赖，等待安装完成之后，安装失败可用 cnpm 或 yarn
+npm run dev   // 运行
 
-// 运行
-npm run dev
 
-// 执行构建命令，生成的dist文件夹放在服务器下即可访问
-npm run build
-```
+## 项目简介
+应用简介：
+  “智享天年”应用程序旨在为父母群体提供便捷的生活服务、健康管理和社交互动功能，帮助提升生活品质和幸福感。本应用通过先进的技术手段、智能化的数据管理，帮助父母群体更好地管理健康，享受安全和便捷的数字生活。
+
+  主要功能：
+  1. 健康管理：
+  - 自动记录和储存健康数据，如血压、血糖、心率、步数等。
+  - 健康数据生成趋势图表，帮助父母和子女清晰了解健康变化。
+  - 提供健康预警功能，当健康指标超出正常范围时，及时发送提醒。
+
+  2. 生活服务：
+  - 提供便捷的日常生活服务提示。
+  - 提供老年人专属服务推荐，例如养生、运动、饮食健康等内容。
+
+  3. 健康数据趋势分析：
+  - 根据健康数据自动生成趋势图表，帮助父母和子女了解健康变化趋势。
+  - 定期分析健康数据并提出健康建议，提醒父母保持健康生活方式。
+
+  产品特色：
+  1. 便捷的健康管理 
+  - 自动健康数据监测：该产品可以自动记录并存储父母的健康数据，如血压、血糖、心率、步数等，提供全面的健康管理。
+  - 健康趋势图表：根据记录的健康数据生成趋势图表，帮助父母和子女清晰直观地了解健康变化，方便进行健康评估与决策。
+  - 健康预警功能：当某项健康指标超出正常范围时，产品会及时向父母发送提醒，确保及时处理健康问题。
+  2. 个性化生活服务
+  - 智能推荐服务：根据父母的需求，提供个性化的生活服务推荐，帮助父母保持健康的生活方式。
+  - 日常提醒功能：展示每天的日常活动线，避免遗忘。
+  3. 简单易用的图形用户界面 
+  - 符合父母群体的操作习惯：界面设计简洁明了。通过清晰的按钮和指引，减少操作复杂性，帮助父母轻松上手。
+  - 高对比度与放大功能：为了适应老年人视力需求，采用高对比度设计和可调节的字体大小，确保所有界面元素清晰可见。
+
+
 
 ## 项目截图
 
-### 首页
 
-![Image text](https://github.com/lin-xin/manage-system/raw/master/screenshots/wms1.png)
 
-### 登录
 
-![Image text](https://github.com/lin-xin/manage-system/raw/master/screenshots/wms3.png)
 
-## License
-
-[MIT](https://github.com/lin-xin/vue-manage-system/blob/master/LICENSE)

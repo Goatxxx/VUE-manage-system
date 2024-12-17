@@ -1,30 +1,38 @@
 import { graphic } from 'echarts/core';
 export const barOptions = {
+    //xAxis — X 轴配置
     xAxis: {
         type: 'category',
         data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
     },
+    //yAxis — Y 轴配置
     yAxis: {
         type: 'value',
     },
+    //tooltip — 提示框配置
     tooltip: {
         trigger: 'axis',
         axisPointer: {
             type: 'shadow',
         },
     },
+    //color — 图表颜色配置
     color: ['#009688', '#f44336'],
-    series: [
+    //series — 数据系列配置
+    series: [        
         {
-            data: [120, 200, 150, 80, 70, 110, 130],
+            //绿色的
+            data: [150, 150, 150,150, 150, 150, 150],
             type: 'bar',
         },
         {
-            data: [180, 230, 190, 120, 110, 230, 235],
+            data: [350, 230, 190, 120, 110, 230, 235],
             type: 'bar',
         },
     ],
 };
+
+
 
 export const lineOptions = {
     tooltip: {
@@ -223,6 +231,12 @@ export const ringOptions = {
     ],
 };
 
+
+
+
+
+
+// 自定义折线图 心率变化趋势图
 export const dashOpt1 = {
     xAxis: {
         type: 'category',
@@ -231,6 +245,9 @@ export const dashOpt1 = {
     },
     yAxis: {
         type: 'value',
+        min: 0,  // 设置最小值
+        max: 150,  // 设置最大值
+        interval: 30,  // 设置间隔
     },
     grid: {
         top: '2%',
@@ -243,28 +260,149 @@ export const dashOpt1 = {
     series: [
         {
             type: 'line',
-            areaStyle: {
-                color: new graphic.LinearGradient(0, 0, 0, 1, [
-                    {
-                        offset: 0,
-                        color: 'rgba(0, 150, 136,0.8)',
-                    },
-                    {
-                        offset: 1,
-                        color: 'rgba(0, 150, 136,0.2)',
-                    },
-                ]),
-            },
             smooth: true,
-            data: [120, 132, 301, 134, 90, 230, 210],
+            //更改数据的地方 绿色的线
+            //我想的是计算平均值，然后设置为平均值
+            data: [90, 90, 90, 90, 90, 90, 90],
         },
         {
+            //更改数据的地方 红色的线
             type: 'line',
             smooth: true,
-            data: [220, 122, 191, 234, 190, 130, 310],
+            data: [81, 122, 75, 83, 108, 130, 86],
         },
     ],
 };
+
+
+
+
+// 自定义折线图 血压变化趋势图
+export const dashOpt12 = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['07:00', '11:00', '15:00', '19:00', '23:00', '03:00', '07:00'],
+    },
+    yAxis: {
+        type: 'value',
+        min: 40,  // 设置最小值
+        max: 180,  // 设置最大值
+        interval: 20,  // 设置间隔
+    },
+    grid: {
+        top: '2%',
+        left: '2%',
+        right: '3%',
+        bottom: '2%',
+        containLabel: true,
+    },
+    color: ['#009688', '#f44336'],
+    series: [
+        {
+            type: 'line',
+            smooth: true,
+            //更改数据的地方 绿色的线
+            //收缩压（上压）
+            data: [110, 122, 135, 115, 108, 98, 114],
+        },
+        {
+            //更改数据的地方 红色的线
+            //舒张压（下压）
+            type: 'line',
+            smooth: true,
+            data: [66, 85, 78, 81, 70, 67, 74],
+        },
+    ],
+};
+
+
+
+
+
+
+
+// 自定义折线图 血糖变化趋势图
+export const dashOpt13 = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['06:30', '08:00', '10:00', '12:00', '13:30', '15:00','17:00','19:00', '21:00','23:00'],
+    },
+    yAxis: {
+        type: 'value',
+        min: 4,  // 设置最小值
+        max: 8,  // 设置最大值
+        interval: 0.5,  // 设置间隔
+    },
+    grid: {
+        top: '2%',
+        left: '2%',
+        right: '3%',
+        bottom: '2%',
+        containLabel: true,
+    },
+    color: ['#009688', '#f44336'],
+    series: [
+        {
+            type: 'line',
+            smooth: true,
+            //更改数据的地方 绿色的线
+            //血糖值 (mmol/L)
+            data: [5.0, 7.8, 6.5, 5.2, 8.0, 6.3, 5.4 , 7.5, 6.1, 5.2],
+        },
+        {
+            //更改数据的地方 红色的线
+            //平均值
+            type: 'line',
+            smooth: true,
+            data: [6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3, 6.3],
+        },
+    ],
+};
+
+
+
+
+
+
+
+// 自定义折线图 某天的步数增长曲线
+export const dashOpt14 = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00', '23:00']
+    },
+    yAxis: {
+        type: 'value',
+        min: 0,  // 设置最小值
+        max: 8000,  // 设置最大值
+        interval: 500,  // 设置间隔
+    },
+    grid: {
+        top: '2%',
+        left: '2%',
+        right: '3%',
+        bottom: '2%',
+        containLabel: true,
+    },
+    color: ['#009688', '#f44336'],
+    series: [
+        {
+            type: 'line',
+            smooth: true,
+            //更改数据的地方 绿色的线
+            //步数
+            data: [50, 200, 300, 450, 500, 600, 800, 1200, 1500, 1800, 2000, 2300, 2600, 2900, 3200, 3500, 3800, 4000, 4200, 4500, 4800, 5000, 5200, 5400] // 每小时的步数
+        },
+    ],
+};
+
+
+
+
+
 
 export const dashOpt2 = {
     legend: {
@@ -283,16 +421,20 @@ export const dashOpt2 = {
                 borderWidth: 2,
             },
             data: [
-                { value: 1048, name: '数码' },
-                { value: 735, name: '食品' },
-                { value: 580, name: '母婴' },
-                { value: 484, name: '家电' },
-                { value: 300, name: '运动' },
+                { value: 1048, name: '1' },
+                { value: 735, name: '2' },
+                { value: 580, name: '3' },
+                { value: 484, name: '4' },
+                { value: 300, name: '5' },
             ],
         },
     ],
 };
 
+
+
+
+//这是地图设计
 export const mapOptions = {
     tooltip: {
         trigger: 'item',

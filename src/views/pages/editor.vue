@@ -1,8 +1,9 @@
 <template>
     <div class="container">
         <div class="plugins-tips">
-            wangEditor：轻量级 web 富文本编辑器，配置方便，使用简单。 访问地址：
-            <a href="https://www.wangeditor.com/doc/" target="_blank">wangEditor</a>
+            <h2>富文本编辑器：wangEditor</h2>
+            <!-- wangEditor：轻量级 web 富文本编辑器，配置方便，使用简单。 访问地址：
+            <a href="https://www.wangeditor.com/doc/" target="_blank">wangEditor</a> -->
         </div>
         <div style="border: 1px solid #ccc; margin-bottom: 10px">
             <Toolbar style="border-bottom: 1px solid #ccc" :editor="editorRef" :defaultConfig="toolbarConfig" />
@@ -30,7 +31,7 @@ const valueHtml = ref('<p>hello</p>');
 // 模拟 ajax 异步获取内容
 onMounted(() => {
     setTimeout(() => {
-        valueHtml.value = '<p>模拟 Ajax 异步设置内容</p>';
+        valueHtml.value = '<p>请输入内容...</p>';
     }, 1500);
 });
 

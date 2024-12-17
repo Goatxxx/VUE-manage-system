@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    copy: typeof import('./src/components/sidebar copy.vue')['default']
     Countup: typeof import('./src/components/countup.vue')['default']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
@@ -31,6 +32,7 @@ declare module '@vue/runtime-core' {
     ElForm: typeof import('element-plus/es')['ElForm']
     ElFormItem: typeof import('element-plus/es')['ElFormItem']
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElIconSCustom: typeof import('@element-plus/icons-vue')['SCustom']
     ElImage: typeof import('element-plus/es')['ElImage']
     ElInput: typeof import('element-plus/es')['ElInput']
     ElInputNumber: typeof import('element-plus/es')['ElInputNumber']
@@ -69,9 +71,12 @@ declare module '@vue/runtime-core' {
     ElUpload: typeof import('element-plus/es')['ElUpload']
     ElWatermark: typeof import('element-plus/es')['ElWatermark']
     Header: typeof import('./src/components/header.vue')['default']
+    Popup: typeof import('./src/components/Popup.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Sidebar: typeof import('./src/components/sidebar.vue')['default']
+    'Sidebar copy': typeof import('./src/components/sidebar copy.vue')['default']
+    SIdentify: typeof import('./src/components/SIdentify.vue')['default']
     TableCustom: typeof import('./src/components/table-custom.vue')['default']
     TableDetail: typeof import('./src/components/table-detail.vue')['default']
     TableEdit: typeof import('./src/components/table-edit.vue')['default']
