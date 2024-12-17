@@ -67,7 +67,7 @@ npm run dev   // 运行
 
 ## 项目截图
 
+![本地图片示例](./assert/example1.png)
 
-
-
+![本地图片示例](./assert/example2.png)
 
